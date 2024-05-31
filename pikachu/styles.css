@@ -1,0 +1,17 @@
+body {
+    margin-top: 70px;
+    text-align: center;
+    background-color: cornflowerblue;
+}
+.pokeContainer {
+    width: 100%;
+    display: flex;
+}
+.pokeImg {
+    width: 25%;
+    margin: 0 auto;
+}
+#pokemonSprite {
+    margin: 0 auto;
+    height: 400%;
+}
