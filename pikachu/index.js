@@ -6,6 +6,7 @@ async function pokeMon(){
             throw new Error("Could not fetch resource")
         }
         const pikajson = await response.json();
+        console.log(pikajson);
         const pokemonSprite = pikajson.sprites.front_default;
         const imgElement = document.getElementById("pokemonSprite");
         imgElement.src = pokemonSprite;
