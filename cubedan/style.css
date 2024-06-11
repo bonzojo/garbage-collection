@@ -1,13 +1,21 @@
+html{
+    height: 100%;
+    overflow: hidden;
+}
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 24px;
     text-align: center;
-    margin-top: 20px;
     background-color: black;
     /*
     background-color: hsl(200, 82%, 4%);
     */
-    color: cornflowerblue;
+    color: gold;
+}
+#questionContainer {
+    margin-top: 10px;
 }
 #question {
     margin-bottom: 10px;
@@ -35,14 +43,32 @@ body {
     background-color: black;
     color: antiquewhite;
 }
-
+/*
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+    opacity: 25%;
+    z-index: -1;
+*/
 #currentImage {
-    
+    margin-top: 10px;   
     position: absolute;
     top: 25%;
     left: 25%;
     width: 50vw;
     height: 70vh;
     object-fit: fill;
+
+}
+#Matrix {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
     z-index: -1;
 }

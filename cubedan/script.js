@@ -3,15 +3,18 @@ let images = [
     './images/r2.png',
     './images/2.jpg',
     './images/3.webp',
+    './images/R.png',
     './images/r5.png',
     './images/4.png',
     './images/5.webp',
     './images/r6.png',
     './images/6.png',
+    './images/dog.jpg',
     './images/7.webp',
     './images/r3.png',
     './images/8.webp',
     './images/9.jpg',
+    './images/woof.png',
     './images/r4.png',
     './images/10.png',
     './images/11.webp',
@@ -35,8 +38,8 @@ function submitName() {
 }
 
 function startCountdown() {
-    document.getElementById('message').innerText = `You have five minutes to solve a Rubik's cube, ${userName}. Starting Now...`; // Change Challenge Message as you feel like.
-    let nums = 300; // Seconds timer
+    document.getElementById('message').innerText = `You are tasked with solving a Rubik's cube, ${userName}. Starting Now...`; // Change Challenge Message as you feel like.
+    let nums = 100; // Seconds timer
     
     document.getElementById('timer').innerText = `You have ${nums} seconds left, ${userName}.`;
     if (nums === 0) {
@@ -55,8 +58,15 @@ function startCountdown() {
             document.getElementById('timer').innerText = `Time is up, ${userName}.`;
             clearInterval(intervalId);
             document.getElementById('currentImage').src = './images/morpheus.jpg';
-            currentImage.style.borderRadius = 0;
             clearInterval(imgInterval);
+            currentImage.style.borderRadius = 0;
+            currentImage.style.
+            currentImage.style.position = absolute;
+            currentImage.style.top = '25%';
+            currentImage.style.left = '25%';
+            currentImage.style.width = '50vw';
+            currentImage.style.height = "70vh";
+            currentImage.style.objectFit = "fill";
         }
     }, 1000);
 }
