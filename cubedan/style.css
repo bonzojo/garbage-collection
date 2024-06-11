@@ -13,6 +13,7 @@ body {
     background-color: hsl(200, 82%, 4%);
     */
     color: gold;
+    -webkit-text-stroke: whitesmoke 0.2px;
 }
 #questionContainer {
     margin-top: 10px;
@@ -71,4 +72,12 @@ body {
     height: 100vh;
     object-fit: cover;
     z-index: -1;
+}
+
+.bouncingImage {
+    position: absolute;
+    border: dotted 15px yellow;
+    border-radius: 35%;
+    width: auto; /* Set the initial width of the image */
+    height: auto; /* Set the initial height of the image */
 }

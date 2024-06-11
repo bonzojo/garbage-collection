@@ -1,9 +1,8 @@
-let images = [
+let shodan = [
     './images/1.jpg',
     './images/r2.png',
     './images/2.jpg',
     './images/3.webp',
-    './images/R.png',
     './images/r5.png',
     './images/4.png',
     './images/5.webp',
@@ -14,7 +13,6 @@ let images = [
     './images/r3.png',
     './images/8.webp',
     './images/9.jpg',
-    './images/woof.png',
     './images/r4.png',
     './images/10.png',
     './images/11.webp',
@@ -75,8 +73,8 @@ function startCountdown() {
 
 function cycleImages() {
     imgInterval = setInterval(() => {
-        currentIndex = (currentIndex + 1) % images.length;
-        document.getElementById('currentImage').src = images[currentIndex];
+        currentIndex = (currentIndex + 1) % shodan.length;
+        document.getElementById('currentImage').src = shodan[currentIndex];
         const borderRadiusValue = Math.floor(Math.random() * 51) + '%';
         currentImage.style.borderRadius = borderRadiusValue;
     }, 50);
