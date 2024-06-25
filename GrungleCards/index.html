@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grungle</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div id="contentContainer">
+        <!-- How to Play -->
+        <button id="howToPlay">How to Play?</button>
+        <div id="htpContainer" style="display: none;">
+                <p>Grungle is a quirky card game based on the rock, paper, scissors format.<br>
+                    - A grid is generated from a deck of 21 cards.<br>
+                    - The goal of the player is to accumulate points by selecting cards to battle.<br>
+                    - The outcome of each card battle is resolved through some simple rules.<br>
+                    - The 21 card deck is made up of 3 suits. The Dragon, The Kraken and the Unicorn.<br>
+                    - Dragon beats Kraken. Kraken beats Unicorn and Unicorn beats Dragon.<br>
+                    - Each card from each suit has a value ranging from 1 to 7.<br>
+                    - If the winning cards value is higher than the losing card, the difference in value is added as points to the player.<br>
+                    - If the winning cards value is lower than the losing card, the difference is deducted in points from the player.<br>
+                    - If the cards are the same suit. Then no points are won or deducted.<br>
+                    - After each battle, the cards are removed from the board.<br>
+                </p>
+        </div>
+        <!--Title and TypeFace-->
+        <h1 id="title">Grungle</h1>
+        <!--
+        <h2 id="numbersTypeFace">0123456789</h2>
+        -->
+        <!--PlayerScore-->
+        <h2>Points:<span id="result"></span></h2>
+        <h2 id="playerScore"></h2>
+
+        <!--GameBoard-->
+        <div class="gridBoard">
+            <div class="gridSquare">
+            </div>
+            <div class="gridSquare">
+            </div>
+            <div class="gridSquare">
+            </div>
+            <div class="gridSquare">
+            </div>
+            <div class="gridSquare">
+            </div>
+            <div class="gridSquare">
+            </div>
+            <div class="gridSquare">
+            </div>
+            <div class="gridSquare">
+            </div>
+            <div class="gridSquare">
+            </div>
+        </div>
+
+        <button id="refreshBoard">Shuffle Board</button>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>

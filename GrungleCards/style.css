@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'grungleFont';
+    src: url(fonts/BuGothicHybrid-xyd5.ttf);
+}
+@font-face {
+    font-family: 'grungleNumbers';
+    src: url(fonts/Crashnumberingserif-KVjW.ttf);
+}
+
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    background-image: url('images/old-weathered-wood-table-dark.png');
+    background-size: cover;
+    /*background: linear-gradient(180deg, rgb(145, 64, 2), rgb(59, 25, 0));*/
+    /* background-color: rgb(112, 49, 0); */
+    color: bisque;
+
+}
+
+#contentContainer{
+    border: solid black 12px;
+}
+
+#htpContainer {
+    margin: auto;
+    margin-top: 16px;
+    padding: 20px;
+    width: 800px;
+    line-height: 42px;
+    border: dashed burlywood 2px;
+    font-family: garamond;
+    font-size: 30px;
+    text-align: justify;
+    -webkit-text-stroke: 0.1px black;
+    color: whitesmoke;
+}
+
+#howToPlay{
+    margin-top: 16px;
+}
+
+#title{
+    margin: 20px auto;
+    font-family: 'grungleFont';
+    font-size: 120px;
+    -webkit-text-stroke: black 0.5px;
+}
+
+#title:hover {
+    -webkit-text-stroke: 2px black;
+}
+
+#numbersTypeFace {
+    font-family: 'grungleNumbers';
+    font-size: 100px;
+}
+
+.gridBoard {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 600px; /*cards x3 is exactly 840px */
+    width: 480px; /* cards x3 is exactly 615px */
+}
+
+.gridSquare {
+    height: 190px;
+    width: 140px;
+    padding: 7px;
+    border: solid 1px goldenrod;
+}
+
+.gridSquare img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.gridSquare:hover {
+    background-color: goldenrod;
+}
+
+.card-container {
+    position: relative;
+}
+
+.card-value{
+    position: absolute;
+    top: 3%;
+    left: 4%;
+    width: 20px;
+    background-color: black;
+    border: solid 1px goldenrod;
+    border-radius: 3px;
+    padding: 4px;
+    font-size: 36px;
+    font-family: 'grungleNumbers';
+}
+
+#refreshBoard {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

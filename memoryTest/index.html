@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Memory Test</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+  <!-- I am wondering if having the audio files referenced in the html is a better idea??
+  <audio id="cow">
+    <source src="./resources/sounds/cow.mp3"></source>
+  </audio>
+  <audio id="donkey">
+    <source src="./resources/sounds/donkey.mp3"></source>
+  </audio>
+  <audio id="monkey">
+    <source src="./resources/sounds/monkey.mp3"></source>
+  </audio>
+  <audio id="pig">
+    <source src="./resources/sounds/pig.mp3"></source>
+  </audio>
+  -->
+</head>
+
+<body>
+  <h1 id="title">A deliberately annoying memory test</h1>
+
+  <div class="game-pad">
+      <button class="btn cow" id="cow"></button>
+      <button class="btn donkey" id="donkey"></button>
+      <button class="btn monkey" id="monkey"></button>
+      <button class="btn pig" id="pig"></button>
+  </div>
+
+  <div class="scores">
+    <h3>Player Score:<span id="playerScore">0</span></h3>
+    <h3>Level:<span id="numOfLevels">0</span></h3>
+  </div>
+
+  <div class="startGame">
+    <button id="startGameBtn">Start!</button>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./memoryGame.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elong</title>
+    <style>
+        body {
+            background-color: #1DA1F2;
+        }
+        #elon {
+            border: solid 5px white;
+            border-radius: 50%;
+            height: 300px;
+            width: 400px;
+        }
+        .imgContainer, .userDataContainer, .btnSlice {
+            text-align: center;
+            margin-top: 30px; 
+        }
+        button {
+            font-size: large;
+            height: 70px;
+            width: 150px;
+            color: white;
+            background-color: #1DA1F2;
+            border: solid 3px white;
+        }
+        #userData {
+            font-size: 24px;
+        }
+        #charCount, p {
+            font-size: large;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgContainer">
+    <img id="elon" src="#">
+    </div>
+
+    <div class="userDataContainer">
+        <textarea rows="12" cols="60" id="userData">###</textarea>
+        <p>Characters: <span id="charCount">#</span></p>
+    </div>
+
+    <div class="btnSlice">
+    <button id="sliceTweetBtn">Slice my Tweet!</button>
+    </div>
+    
+    <script src="./lengthAndSlice.js"></script>
+</body>
+</html>

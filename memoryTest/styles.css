@@ -1,0 +1,103 @@
+
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  margin:  2%;
+  color: #FEF2BF;
+}
+
+.startGame {
+  width: 350px;
+  position: absolute;
+  color: white;
+  margin-top: 100px;
+  margin-left: 70%;
+}
+
+#startGameBtn {
+  background-color: silver;
+  -webkit-text-stroke: #011F3F 1px;
+  color: goldenrod;
+  border-radius: 15%;
+  border-color: black;
+  height: 120px;
+  width: 200px;
+  font-size: 1.6rem;
+  font-family: 'Press Start 2p', cursive;
+}
+
+.scores {
+  font-family: 'Press Start 2p', cursive;
+  width: 350px;
+  position: absolute;
+  font-size: 1.5rem;
+  color: gold;
+  margin-top: 100px;
+}
+
+.btn {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  background-position: center;
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  border-width: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+}
+
+#cow {
+  border: solid 7px green;
+  border-radius: 250px 0 0 0;
+  -moz-border-radius: 250px 0 0 0;
+  -webkit-border-radius: 250px 0 0 0;
+  background-image: url('./resources/images/cow.jpg');
+  margin: -250px 0px 0px -250px;
+
+}
+
+#donkey {
+  border: solid 7px red;
+  border-radius: 0 250px 0 0;
+  -moz-border-radius: 0 250px 0 0;
+  -webkit-border-radius: 0 250px 0 0;
+  background-image: url('./resources/images/donkey.jpg');
+  margin: -250px 0px 0px 0px;
+}
+
+#monkey {
+  border: solid 7px yellow;
+  border-radius: 0 0 0 250px;
+  -moz-border-radius: 0 0 0 250px;
+  -webkit-border-radius: 0 0 0 250px;
+  background-image: url('./resources/images/monkey.jpg');
+  margin: 0px -250px 0px -250px;
+}
+
+#pig {
+  border: solid 7px blue;
+  border-radius: 0 0 250px 0;
+  -moz-border-radius: 0 0 250px 0;
+  -webkit-border-radius: 0 0 250px 0;
+  background-image: url('./resources/images/piggie.jpg');
+  margin: 0px 0px -250px 0px;
+
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 0 100px white;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "superhero-name",
+  "version": "1.0.0",
+  "description": "Give me a superhero name",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John McEwan",
+  "license": "ISC",
+  "dependencies": {
+    "superheroes": "^4.0.0"
+  }
+}
